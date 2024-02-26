@@ -4,7 +4,7 @@ import { useMailContext } from '../Context/MailContext';
 import erIcon from '../imgs/erIcon.svg';
 import '../Styles/display_prompt.css'
 
-const base_url = import.meta.env.BASE_URL;
+const base_url = import.meta.env.VITE_API_URL;
 
 
 const MailDisplay = () => {
@@ -18,6 +18,7 @@ const MailDisplay = () => {
 
     const getData = async () => {
         const apiUrl = `${base_url}/prompt`;
+        //console.log(apiUrl);
 
     try {
         setIsLoading(true);
