@@ -1,0 +1,95 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: whitesmoke;
+}
+
+html,
+body {
+  background-color: #1e293b;
+  background-size: 70px 70px;
+  background-image: linear-gradient(
+      to left,
+      #475569 0.5px,
+      transparent 0.5px
+    ),
+    linear-gradient(to bottom, #475569 0.5px, transparent 0.5px);
+}
+
+.container {
+  margin: 1em;
+  padding: 2em;
+  height: 70vh;
+  top: 20;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container {
+  margin: 5px;
+  border: 0.5px solid #e2e8f0;
+  padding: 20px;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.right-container {
+  margin: 5px;
+  border: 0.5px solid #e2e8f0;
+  flex: 6;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width : 768px){
+  .container {
+    flex-direction: column;
+    height: 100vh;
+    margin: auto;
+  }
+
+  .left-container {
+    flex: 4;
+  }
+
+  .right-container {
+    flex: 6;
+  }
+}
+
+@media screen and (max-width : 450px){
+  .container {
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+    padding: 0;
+  }
+
+  .left-container {
+    flex: 3;
+  }
+
+  .right-container {
+    flex: 7;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #64748b; /* Thumb color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0f172a;
+  opacity: 0.15; /* Track color */
+}
